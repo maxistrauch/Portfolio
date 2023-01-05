@@ -1,0 +1,147 @@
+/* reset */
+
+html, body, h1, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+img {
+    width: 75%;
+    height: auto;
+}
+
+/* styles */
+
+body {
+    font-family: Articulate CF, sans-serif;
+    padding: 20px;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 2em;
+
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+    padding-bottom: 5rem;   
+    padding-top: 3rem;
+}
+
+h2 {
+    font-weight: 5;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 2em;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 8em;
+    grid-column-gap: 4 em;
+}
+
+.img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    text-align: center;
+}
+
+.text {
+    font-size: 13px;
+    text-align: start;
+    font-weight: 5;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    align-self: flex-end;
+}
+
+
+.footer {
+    font-family: Articulate CF, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 12px;
+    font-weight: 5;
+    padding-right: 7em;
+    position: relative;
+    bottom: 3em;
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-color: darkgray;
+}
+
+h2:hover {
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (max-width:800px) {
+    h2 {
+        visibility: hidden;
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em;
+    }
+    .text{
+        font-size: 11px;
+        text-align: end;
+        font-weight: 5;
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+        width: 140%;
+    }
+    .img{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 2;
+        width: 190%;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .footer{
+        display: inherit;
+        padding-bottom: 0rem;
+        font-size: 10px;
+        font-weight: 5;
+    }
+    .footer p{
+        padding-bottom: 5px;
+    }
+    .umbruch{
+        padding-bottom: 5px;
+    }
+}
