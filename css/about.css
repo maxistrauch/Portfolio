@@ -19,24 +19,21 @@ img {
 /* styles */
 
 body {
-    font-family: Articulate CF, sans-serif;
-    padding: 20px;
-    padding-left: 7em;
-    padding-right: 7em;
-    padding-top: 2em;
-
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 4em;
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 35px;
     color: black;
-    padding-bottom: 5rem;   
-    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 h2 {
-    font-weight: 5;
+    font-weight: 400;
     font-size: 16px;
     color: black;
     padding-bottom: 2em;
@@ -45,7 +42,7 @@ h2 {
 .main {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding-bottom: 5em;
+    padding-bottom: 4em;
     grid-column-gap: 4em;
     grid-row-gap: 4em;
 }
@@ -61,11 +58,11 @@ h2 {
 
 .p1 {
     text-align: start;
-    width:110%;
+    width:100%;
     padding-bottom: 4em;
 }
 .p2 {
-    width: 160%;
+    width: 150%;
 }
 
 .img {
@@ -75,16 +72,16 @@ h2 {
 
 
 .footer {
-    font-family: Articulate CF, sans-serif;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
     font-size: 12px;
     font-weight: 5;
-    padding-bottom: 3em;
-    padding-right: 7em;
+    position: fixed;
+    bottom: 3em;
+    width: 100%;
 }
 
 a {
@@ -92,8 +89,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration-color: darkgray;
+.footer a:hover {
+    color: darkgray;
 }
 
 h2:hover {
@@ -121,32 +118,41 @@ h2:hover {
 }
 
 @media screen and (max-width:800px) {
+    body{
+        margin: 2em;
+    }
     .main{
-        display: inherit;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 2em;
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+    }
     }
     .text{
         font-size: 11px;
         font-weight: 5;
-    }
-    .p1{
-        text-align: left;
-        padding-top: 34em;
-        padding-right: 10em;
-    }
-    .p2{
-        padding-top: 3em;
-        padding-left: 10em;
-    }
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+        text-align: justify;
+}
+    .p1 {
+        padding-bottom: 0em;
+        text-align: justify;
+}
+    .p2 {
+        width: 100%;
+}
     .img{
-        width: 50%;
-        float: right;
-        padding-top: 3em;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        text-align: end;
     }
 }
 
 @media screen and (max-width:800px) {
     .footer{
-        display: inherit;
+        display: block;
         padding-bottom: 0rem;
         font-size: 10px;
         font-weight: 5;
