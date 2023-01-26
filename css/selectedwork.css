@@ -166,7 +166,7 @@ h2:hover {
 
 @media screen and (max-width:800px) {
     .footer{
-        display: inherit;
+        display: contents;
         padding-bottom: 0rem;
         padding-top: 2em;
         font-size: 10px;

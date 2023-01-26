@@ -130,30 +130,29 @@ h2:hover {
         grid-column-gap: 2em;
         grid-row-gap: 2em;
     }
-    }
     .text{
         font-size: 11px;
         font-weight: 5;
         grid-row: 2 / span 1;
         grid-column: 1 / span 2;
         text-align: justify;
-}
+    }
     .p1 {
         padding-bottom: 0em;
         text-align: justify;
-}
+    }
     .p2 {
         width: 100%;
-}
+    }
     .img{
         grid-row: 1 / span 1;
         grid-column: 2 / span 1;
         text-align: end;
     }
     .footer{
-        display: inherit;
-        padding-top: 2em;
+        display: contents;
         padding-bottom: 0rem;
+        padding-top: 2em;
         font-size: 10px;
         font-weight: 5;
     }
